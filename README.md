@@ -1,4 +1,4 @@
-# Axios Tutorial
+# Axios
 
 #### Docs
 
@@ -11,7 +11,7 @@ npm install axios
 ```
 
 ```js
-<script src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 ```
 
 #### First Request
@@ -57,8 +57,8 @@ const fetchDadJoke = async () => {
   try {
     const { data } = await axios(url, {
       headers: {
-        Accept: 'application/json',
-      },
+        Accept: 'application/json'
+      }
     });
     // console.log(data);
     setJoke(data.joke);
@@ -105,8 +105,8 @@ axios.defaults.headers.post['Content-Type'] =
 const authFetch = axios.create({
   baseURL: 'https://course-api.com',
   headers: {
-    Accept: 'application/json',
-  },
+    Accept: 'application/json'
+  }
 });
 ```
 
